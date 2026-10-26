@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AcoustiMech Pro</title>
+  <meta name="description" content="Official Privacy Policy for AcoustiMech Pro Android application.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/icon_512.png">
+  <style>
+    .privacy-content {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: var(--surface-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+    .privacy-content h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .privacy-content h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      color: var(--text-main);
+    }
+    .privacy-content p, .privacy-content li {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icon_512.png" alt="AcoustiMech Pro Icon">
+      ACOUSTIMECH <span>PRO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#download" class="btn-primary">Google Play</a>
+    </nav>
+  </header>
+
+  <main class="privacy-content">
+    <div class="badge">COMPLIANCE & TRANSPARENCY</div>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> October 27, 2026<br>
+    <strong>Application Name:</strong> AcoustiMech Pro<br>
+    <strong>Package Name:</strong> <code>com.acoustimech.pro</code></p>
+
+    <h2>1. Overview & Commitment to Zero-Cloud Privacy</h2>
+    <p>
+      AcoustiMech Pro is an industrial engineering and vibration diagnostic utility developed for professional use in confidential maritime, industrial, power-generation, and defense facilities. We operate with an uncompromising zero-cloud privacy policy: <strong>we do not collect, store, transmit, or share any personal user data, telemetry, device identifiers, or usage logs.</strong>
+    </p>
+
+    <h2>2. Sensor & Hardware Permissions</h2>
+    <p>To perform its mechanical diagnostic functions, the application requests the following Android permissions:</p>
+    <ul>
+      <li>
+        <strong>HIGH_SAMPLING_RATE_SENSORS & Accelerometer (android.hardware.sensor.accelerometer):</strong>
+        Required to capture high-frequency physical mechanical vibrations (up to 500+ Hz) when the smartphone is held against rotating machinery casings. All accelerometer data is processed strictly in volatile device RAM for real-time FFT calculation and is never transmitted off the device.
+      </li>
+      <li>
+        <strong>RECORD_AUDIO (Microphone):</strong>
+        Used exclusively when the user explicitly enables "Acoustic Ultrasound Mode" to capture high-frequency acoustic friction, gear impacts, and pump cavitation (44.1 kHz PCM). Raw audio streams are processed solely in real-time memory for FFT spectral analysis. <strong>Audio is NEVER recorded to audio files, saved to storage, or transmitted across any network.</strong>
+      </li>
+      <li>
+        <strong>VIBRATE:</strong>
+        Used solely for brief tactile haptic feedback when vibration levels exceed ISO 10816 Zone D critical trip thresholds.
+      </li>
+    </ul>
+
+    <h2>3. Local Data Storage</h2>
+    <p>
+      Any inspection logs saved by the user (such as Machine Name, Measurement Point, and RMS velocity values) are stored entirely on the local device using SQLite. Users retain 100% control over this data and may export it via CSV or delete it at any time.
+    </p>
+
+    <h2>4. Third-Party Analytics & Advertising</h2>
+    <p>
+      AcoustiMech Pro is a one-time paid application. It contains:
+    </p>
+    <ul>
+      <li><strong>ZERO</strong> third-party advertising SDKs (no AdMob, Unity, etc.).</li>
+      <li><strong>ZERO</strong> analytics or telemetry trackers (no Google Analytics, Firebase Analytics, Crashlytics, etc.).</li>
+      <li><strong>ZERO</strong> account requirements or logins.</li>
+    </ul>
+
+    <h2>5. Children’s Privacy</h2>
+    <p>
+      Our application is an industrial diagnostic tool and does not address or knowingly collect data from children under 13.
+    </p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>
+      Any future updates to this policy will be posted on this page. Since the application does not transmit data, our zero-data collection guarantee remains permanent.
+    </p>
+
+    <h2>7. Contact Information</h2>
+    <p>
+      If you have questions regarding this Privacy Policy or AcoustiMech Pro, please contact us at:
+      <br>
+      <strong>Developer Support:</strong> <code>support@acoustimech.local</code>
+      <br>
+      <strong>Website:</strong> <a href="index.html">AcoustiMech Pro Portal</a>
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 AcoustiMech Pro Engineering Suite. All Rights Reserved.</p>
+    <p><a href="index.html">Return to Home Page</a></p>
+  </footer>
+
+</body>
+</html>
